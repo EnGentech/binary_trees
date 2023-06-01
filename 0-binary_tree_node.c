@@ -1,4 +1,4 @@
-#include "binary_tress.h"
+#include "binary_trees.h"
 
 /**
 * binary_tree_node - entry point to creating binary tree
