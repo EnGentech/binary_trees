@@ -1,0 +1,12 @@
+#include "binary_trees.h"
+/**
+ * binary_tree_depth - count nodes with at least 1 child
+ * @tree: points to the top
+ * Return: number of nodes with at least a child
+ */
+size_t binary_tree_depth(const binary_tree_t *tree)
+{
+if (tree == NULL || tree->parent == NULL)
+return 0;
+return (1 + binary_tree_depth(tree->parent));
+}
